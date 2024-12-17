@@ -1,116 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pencil Sketch Business</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title>MrPencil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Montserrat&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <!-- CSS only -->
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/76b994243a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">PencilSketch</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <section id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Mr.Pencil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+      <!-- Title -->
+      <div class="row title-section">
+        <div class="col-lg-6">
+          <h1>Transforming your moments into timeless pencil sketches</h1>
+
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i>
+            Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i
+              class="fa-brands fa-google-play"></i>Download</button>
+
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row ">
+      <div class="feature-box col-lg-4">
+        <i class="icon fa-sharp fa-solid fa-circle-check fa-4x"></i>
+        <h3>Easy to order.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="icon fa-solid fa-bullseye fa-4x"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="feature-box col-lg-4 ">
+        <i class="icon fa-solid fa-heart fa-4x"></i>
+        <h3>Guaranteed work.</h3>
+        <p>Find the arts in gallery</p>
+      </div>
+    </div>
+
+
+
+
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>Drawing is not one sees but what one can make others see.</h2>
+          <img class="testimonial-img" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Edgar Degas</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Learning to draw rewries us to see the world differently to love it more intimately by attending to and comming to cherish its priviously invisible details</h2>
+          <img class="testimonial-img" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Maria Popova</em>
+
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+
+        </a>
+      </div>
+
+
+
+
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/TechCrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Art</h2>
+    <p>Simple and affordable price plans for your and your Art.</p>
+    <div class="row mb-3 text-center">
+      <div class="pricing-col col-lg-4 col-md-6 ">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header">
+            <h3>A4 Size</h3>
+          </div>
+          <div class="card-body">
+            <h2>₹1200</h2>
+            <p>One Face</p>
+            <p>Frame Including</p>
+            <p>₹1000 Without Frame</p>
+            <div>
+              <button class="w-100 btn btn-lg btn-outline-dark" type="button">Order</button>
             </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section d-flex align-items-center text-center">
-        <div class="container">
-            <h1>Welcome to PencilSketch</h1>
-            <p>Transforming your moments into timeless pencil sketches</p>
-            <a href="#services" class="btn btn-primary">Our Services</a>
+          </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2>About Us</h2>
-            <p>We create detailed pencil sketches from your photos, ensuring every memory becomes a masterpiece.</p>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container text-center">
-            <h2>Our Services</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card p-3">
-                        <h3>Portrait Sketches</h3>
-                        <p>Hand-drawn portraits to cherish forever.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-3">
-                        <h3>Custom Art</h3>
-                        <p>Sketches tailored to your unique ideas.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-3">
-                        <h3>Group Sketches</h3>
-                        <p>Capture special moments with loved ones.</p>
-                    </div>
-                </div>
+      </div>
+      <div class="pricing-col col-lg-4 col-md-6">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header">
+            <h3>A4 Size</h3>
+          </div>
+          <div class="card-body">
+            <h2>₹1500</h2>
+            <p>Two Faces</p>
+            <p>Frame Including</p>
+            <p>₹1300 Without Frame</p>
+            <div>
+              <button class="w-100 btn btn-lg btn-dark" type="button">Order</button>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2>Gallery</h2>
-            <div class="row">
-                <div class="col-md-3"><img src="Gallery/image1.jpg" class="img-fluid" alt="Sketch 1"></div>
-                <div class="col-md-3"><img src="Gallery/image2.jpg" class="img-fluid" alt="Sketch 2"></div>
-                <div class="col-md-3"><img src="Gallery/image3.jpg" class="img-fluid" alt="Sketch 3"></div>
-                <div class="col-md-3"><img src="Gallery/image4.jpg" class="img-fluid" alt="Sketch 4"></div>
+      </div>
+      <div class="pricing-col col-lg-4">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header">
+            <h3>A3 Size</h3>
+          </div>
+          <div class="card-body">
+            <h2>₹2000</h2>
+            <p>One Face</p>
+            <p>Frame Including</p>
+            <p>₹1500 Without Frame</p>
+            <div>
+              <button class="w-100 btn btn-lg btn-dark" type="button">Order</button>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container text-center">
-            <h2>Contact Us</h2>
-            <form class="row g-3">
-                <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="email" class="form-control" placeholder="Your Email" required>
-                </div>
-                <div class="col-12">
-                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </div>
-            </form>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-center text-white py-3">
-        <p>&copy; 2024 PencilSketch. All rights reserved.</p>
-    </footer>
+  <!-- Call to Action -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="businessScript.js"></script>
+  <section id="cta">
+
+    <h3 class="cta-heading">Find the Relialistc art of Your loved one's Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i>
+      Download</button>
+    <button type="button" class="btn btn-light btn-lg download-button"><i
+        class="fa-brands fa-google-play"></i>Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <i class="footer-icon fa-brands fa-facebook-f"></i>
+    <i class="footer-icon fa-brands fa-instagram"></i>
+    <i class="footer-icon fa-solid fa-envelope"></i>
+    <i class="footer-icon fa-brands fa-twitter"></i>
+
+    <p>© Copyright 2024 MrPencil</p>
+
+  </footer>
+
+
 </body>
+
 </html>
