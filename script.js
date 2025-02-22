@@ -24,13 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 	
 	const navbar = document.querySelector(".navbar");
-    const navbarOffset = navbar.offsetTop; // Get the navbar's initial position
+    const brand = document.querySelector(".navbar-brand");
+    const navbarOffset = navbar.offsetTop;
 
     window.addEventListener("scroll", function () {
         if (window.pageYOffset >= navbarOffset) {
             navbar.classList.add("sticky");
+            brand.textContent = "Ganganaboina Sairam"; // Change text when sticky
         } else {
             navbar.classList.remove("sticky");
+            brand.textContent = "Portfolio"; // Revert when not sticky
         }
     });
 });	
