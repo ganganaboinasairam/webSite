@@ -105,6 +105,7 @@ footer {
     height: 250px; /* Adjust height as needed */
     background-color: #ddd; /* Placeholder color */
     position: relative;
+	margin-bottom: 30px;
 }
 
 .profile-photo {
